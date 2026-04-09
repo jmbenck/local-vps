@@ -15,10 +15,10 @@ if [[ "${BASH_SOURCE[0]:-bash}" == "bash" ]]; then
   echo "[→] Downloading local-vps to ${INSTALL_DIR}..."
 
   if command -v git &>/dev/null; then
-    git clone --depth=1 https://github.com/YOUR_USER/local-vps "$INSTALL_DIR" 2>/dev/null
+    git clone --depth=1 https://github.com/jmbenck/local-vps "$INSTALL_DIR" 2>/dev/null
   else
     mkdir -p "$INSTALL_DIR"
-    curl -fsSL https://github.com/YOUR_USER/local-vps/archive/main.tar.gz \
+    curl -fsSL https://github.com/jmbenck/local-vps/archive/main.tar.gz \
       | tar -xz -C /tmp
     mv /tmp/local-vps-main "$INSTALL_DIR" 2>/dev/null \
       || mv /tmp/local-vps-main/* "$INSTALL_DIR"/ 2>/dev/null || true

@@ -22,13 +22,13 @@ One-command home server setup: installs **Coolify** or **EasyPanel** and exposes
 ### Option A — curl | bash
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USER/local-vps/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/jmbenck/local-vps/main/install.sh | sudo bash
 ```
 
 ### Option B — git clone
 
 ```bash
-git clone https://github.com/YOUR_USER/local-vps
+git clone https://github.com/jmbenck/local-vps
 cd local-vps
 sudo bash install.sh
 ```
